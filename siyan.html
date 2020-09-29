@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text">
+    <div id="hejiwei">123</div>
+
+    <script type=text/html id="kaishi">
+        <div>何继威</div>
+
+    </script>
+    <script>
+        var kaishi = document.querySelector("#kaishi");
+        var input = document.querySelector("input");
+        var div = document.getElementById("hejiwei");
+        div.onclick = function() {
+            console.log(input.value);
+        }
+        console.log(kaishi.innerHTML);
+        div.innerHTML = kaishi.innerHTML;
+    </script>
+</body>
+
+</html>
